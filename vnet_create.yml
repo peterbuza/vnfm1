@@ -1,14 +1,14 @@
 ---
 - name: Init
   hosts: localhost
+  tasks:
+   - name: Create the new vnet  
+     azure_rm_resourcegroup_info:
+      name: test
+     register: vnet_info
   
-- name: Create the new vnet  
-  azure_rm_resourcegroup_info:
-    name: test
-  register: vnet_info
-  
-- name: Print VNet info
-  debug:
-   var: vnet_info
+   - name: Print VNet info
+     debug:
+      var: vnet_info
 
 
