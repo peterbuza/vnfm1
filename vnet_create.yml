@@ -4,8 +4,8 @@
   
 - name: Create the new vnet  
   azure_rm_virtualnetwork:
-    name: test_vnet01
     resource_group: test
+    name: test_vnet01
   register: vnet_info
   
 - name: Print VNet info
