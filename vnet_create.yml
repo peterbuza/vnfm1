@@ -6,8 +6,9 @@
      azure_rm_virtualnetwork:
       resource_group: test
       name: test_vnet
+      state: present
       address_prefixes_cidr:
-        - "10.1.0.0/16"
+        - "192.168.1.0/24"
         - "172.100.0.0/16"
      register: vnet_info
   
