@@ -1,5 +1,6 @@
 ---
 - name: Create the new vnet
+  host: localhost
   azure_rm_virtualnetwork:
     name: "test_vnet01"
     resource_group: "test"
