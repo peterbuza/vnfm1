@@ -1,11 +1,14 @@
 ---
-- name: Init
+- name: Create a new vnet
   hosts: localhost
   tasks:
-   - name: Create the new vnet  
+   - name: Create new vnet  
      azure_rm_virtualnetwork:
       resource_group: test
       name: test_vnet
+      address_prefixes_cidr:
+        - "10.1.0.0/16"
+        - "172.100.0.0/16"
      register: vnet_info
   
    - name: Print VNet info
