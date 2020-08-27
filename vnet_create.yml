@@ -7,6 +7,6 @@
   
 - name: Print VNet info
       debug:
-	    var: vnet_info
+       var: vnet_info
 
 
