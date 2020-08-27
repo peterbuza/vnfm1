@@ -1,13 +1,14 @@
 ---
-- name: Create the new vnet
+- name: Init
   hosts: localhost
+  
+- name: Create the new vnet  
   azure_rm_virtualnetwork:
     name: test_vnet01
     resource_group: test
   register: vnet_info
   
 - name: Print VNet info
-  hosts: localhost
   debug:
    var: vnet_info
 
