@@ -7,7 +7,7 @@
   register: vnet_info
   
 - name: Print VNet info
-      debug:
-       var: vnet_info
+  debug:
+   var: vnet_info
 
 
