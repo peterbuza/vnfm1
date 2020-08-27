@@ -3,9 +3,8 @@
   hosts: localhost
   
 - name: Create the new vnet  
-  azure_rm_virtualnetwork:
-    resource_group: test
-    name: test_vnet01
+  azure_rm_resourcegroup_info:
+    name: test
   register: vnet_info
   
 - name: Print VNet info
