@@ -61,7 +61,7 @@
             "name": "[parameters('rgName')]",
             "location": "[parameters('rgLocation')]",
             "properties": {}
-        }
+        },
         {
             "type": "Microsoft.ManagedServices/registrationDefinitions",
             "apiVersion": "2019-06-01",
