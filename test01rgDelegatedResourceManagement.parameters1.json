@@ -19,6 +19,11 @@
         },
         "authorizations": {
             "value": [
+		{ 
+                    "principalId": "f629397b-19bd-4de2-8308-cd47112d766b", 
+                    "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                    "principalIdDisplayName": "VNFM Owners Owner Support" 
+                },
                 { 
                     "principalId": "f629397b-19bd-4de2-8308-cd47112d766b", 
                     "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
