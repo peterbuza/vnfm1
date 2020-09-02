@@ -20,7 +20,7 @@
         "authorizations": {
             "value": [
                 { 
-                    "principalId": "fc2a13744-cbb9-4981-a466-d4508f81f9b7", 
+                    "principalId": "c2a13744-cbb9-4981-a466-d4508f81f9b7", 
                     "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
                     "principalIdDisplayName": "BZS Owners Contributor Support" 
                 }, 
