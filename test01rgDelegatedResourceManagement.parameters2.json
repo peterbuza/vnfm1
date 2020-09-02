@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "BZS in Public Clouds"
+        },
+        "rgName": {
+            "value": "vnfm_management_rg"
+        },
+	"rgLocation": {
+            "value": "West Europe"
+        },
+        "mspOfferDescription": {
+            "value": "Delegated Resource Group Management"
+        },
+        "managedByTenantId": {
+            "value": "389e78a9-234f-4268-be07-4a14e581ccd4"
+        },
+        "authorizations": {
+            "value": [
+                { 
+                    "principalId": "fc2a13744-cbb9-4981-a466-d4508f81f9b7", 
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+                    "principalIdDisplayName": "BZS Owners Contributor Support" 
+                }, 
+                { 
+                    "principalId": "c2a13744-cbb9-4981-a466-d4508f81f9b7", 
+                    "roleDefinitionId": "36243c78-bf99-498c-9df9-86d9f8d28608",
+                    "principalIdDisplayName": "BZS Owners Policy Contributor Support" 
+                },   
+				{
+                    "principalId": "c2a13744-cbb9-4981-a466-d4508f81f9b7",
+                    "principalIdDisplayName": "BZS Owers Policy Automation Account",
+                    "roleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                    "delegatedRoleDefinitionIds": [
+                        "b24988ac-6180-42a0-ab88-20f7382dd24c",
+                        "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+                    ]
+                }      
+            ]
+        }
+    }
+}
